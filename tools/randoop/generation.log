@@ -1,0 +1,306 @@
+Randoop for Java version "4.3.4, local changes, branch master, commit 96e7279, 2025-06-06".
+Cannot instantiate non-accessible class net.sourceforge.plantuml.code.deflate.ByteHistory specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.code.deflate.CanonicalCode specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.ebnf.CornerType specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.json.JsonLiteral specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.json.JsonNumber specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.json.JsonWriter specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.json.WritingBuffer specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.AbstractReal specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.PositiveForce specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.RealDebug specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.RealDelta specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.RealDeltaLive specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.RealImpl specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.RealLine specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.RealMax specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.RealMiddle specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.RealMiddle2 specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.RealMin specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.sourceforge.plantuml.real.RealMoveable specified via --testclass or --classlist.
+
+Will try to generate tests for 256 out of 273 classes.
+PUBLIC MEMBERS=1447
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2026-11-08T01:56:14.261329847Z     56,4M used)
+java.io.IOException: Brotli stream decoding failed
+	at net.sourceforge.plantuml.brotli.BrotliInputStream.read(BrotliInputStream.java:152)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at net.sourceforge.plantuml.FileUtils.copyInternal(FileUtils.java:84)
+	at net.sourceforge.plantuml.FileUtils.copyToStream(FileUtils.java:178)
+	at net.sourceforge.plantuml.code.CompressionBrotli.decompress(CompressionBrotli.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:55)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:64)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:205)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:136)
+	at randoop.operation.MethodCall.execute(MethodCall.java:186)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:406)
+	at randoop.sequence.Statement.execute(Statement.java:164)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:419)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:311)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:240)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:236)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:299)
+	at randoop.main.GenTests.handle(GenTests.java:570)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: net.sourceforge.plantuml.brotli.BrotliRuntimeException: Unused space
+	at net.sourceforge.plantuml.brotli.Decode.readHuffmanCodeLengths(Decode.java:329)
+	at net.sourceforge.plantuml.brotli.Decode.readHuffmanCode(Decode.java:408)
+	at net.sourceforge.plantuml.brotli.Decode.decodeHuffmanTreeGroup(Decode.java:683)
+	at net.sourceforge.plantuml.brotli.Decode.readMetablockHuffmanCodesAndContextMaps(Decode.java:617)
+	at net.sourceforge.plantuml.brotli.Decode.decompress(Decode.java:716)
+	at net.sourceforge.plantuml.brotli.BrotliInputStream.read(BrotliInputStream.java:146)
+	... 24 more
+java.io.IOException: Brotli stream decoding failed
+	at net.sourceforge.plantuml.brotli.BrotliInputStream.read(BrotliInputStream.java:152)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at net.sourceforge.plantuml.FileUtils.copyInternal(FileUtils.java:84)
+	at net.sourceforge.plantuml.FileUtils.copyToStream(FileUtils.java:178)
+	at net.sourceforge.plantuml.code.CompressionBrotli.decompress(CompressionBrotli.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:55)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:64)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:205)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:136)
+	at randoop.operation.MethodCall.execute(MethodCall.java:186)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:406)
+	at randoop.sequence.Statement.execute(Statement.java:164)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:419)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:311)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:240)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:236)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:299)
+	at randoop.main.GenTests.handle(GenTests.java:570)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: net.sourceforge.plantuml.brotli.BrotliRuntimeException: Unused space
+	at net.sourceforge.plantuml.brotli.Decode.readHuffmanCodeLengths(Decode.java:329)
+	at net.sourceforge.plantuml.brotli.Decode.readHuffmanCode(Decode.java:408)
+	at net.sourceforge.plantuml.brotli.Decode.decodeHuffmanTreeGroup(Decode.java:683)
+	at net.sourceforge.plantuml.brotli.Decode.readMetablockHuffmanCodesAndContextMaps(Decode.java:617)
+	at net.sourceforge.plantuml.brotli.Decode.decompress(Decode.java:716)
+	at net.sourceforge.plantuml.brotli.BrotliInputStream.read(BrotliInputStream.java:146)
+	... 24 more
+(creation point not captured; rerun with -DPLANTUML_REAL_DEBUG=true to capture it)
+
+Progress update: steps=1000, test inputs generated=533, failing inputs=6      (2026-11-08T01:56:24.733355718Z     81,3M used)java.io.IOException: Brotli stream decoding failed
+	at net.sourceforge.plantuml.brotli.BrotliInputStream.read(BrotliInputStream.java:152)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at net.sourceforge.plantuml.FileUtils.copyInternal(FileUtils.java:84)
+	at net.sourceforge.plantuml.FileUtils.copyToStream(FileUtils.java:178)
+	at net.sourceforge.plantuml.code.CompressionBrotli.decompress(CompressionBrotli.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:55)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:64)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:205)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:136)
+	at randoop.operation.MethodCall.execute(MethodCall.java:186)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:406)
+	at randoop.sequence.Statement.execute(Statement.java:164)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:419)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:311)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:240)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:236)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:299)
+	at randoop.main.GenTests.handle(GenTests.java:570)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: net.sourceforge.plantuml.brotli.BrotliRuntimeException: Corrupted padding bits
+	at net.sourceforge.plantuml.brotli.BitReader.jumpToByteBoundary(BitReader.java:188)
+	at net.sourceforge.plantuml.brotli.Decode.decompress(Decode.java:967)
+	at net.sourceforge.plantuml.brotli.BrotliInputStream.read(BrotliInputStream.java:146)
+	... 24 more
+java.io.IOException: Brotli stream decoding failed
+	at net.sourceforge.plantuml.brotli.BrotliInputStream.read(BrotliInputStream.java:152)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at net.sourceforge.plantuml.FileUtils.copyInternal(FileUtils.java:84)
+	at net.sourceforge.plantuml.FileUtils.copyToStream(FileUtils.java:178)
+	at net.sourceforge.plantuml.code.CompressionBrotli.decompress(CompressionBrotli.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:55)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:64)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:205)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:136)
+	at randoop.operation.MethodCall.execute(MethodCall.java:186)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:406)
+	at randoop.sequence.Statement.execute(Statement.java:164)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:419)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:311)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:240)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:236)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:299)
+	at randoop.main.GenTests.handle(GenTests.java:570)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: net.sourceforge.plantuml.brotli.BrotliRuntimeException: Unused space
+	at net.sourceforge.plantuml.brotli.Decode.readHuffmanCodeLengths(Decode.java:329)
+	at net.sourceforge.plantuml.brotli.Decode.readHuffmanCode(Decode.java:408)
+	at net.sourceforge.plantuml.brotli.Decode.decodeHuffmanTreeGroup(Decode.java:683)
+	at net.sourceforge.plantuml.brotli.Decode.readMetablockHuffmanCodesAndContextMaps(Decode.java:617)
+	at net.sourceforge.plantuml.brotli.Decode.decompress(Decode.java:716)
+	at net.sourceforge.plantuml.brotli.BrotliInputStream.read(BrotliInputStream.java:146)
+	... 24 more
+(creation point not captured; rerun with -DPLANTUML_REAL_DEBUG=true to capture it)
+
+Progress update: steps=2000, test inputs generated=1134, failing inputs=9      (2026-11-08T01:56:33.445754213Z     30,3M used)(creation point not captured; rerun with -DPLANTUML_REAL_DEBUG=true to capture it)
+java.io.IOException: Brotli stream decoding failed
+	at net.sourceforge.plantuml.brotli.BrotliInputStream.read(BrotliInputStream.java:152)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at net.sourceforge.plantuml.FileUtils.copyInternal(FileUtils.java:84)
+	at net.sourceforge.plantuml.FileUtils.copyToStream(FileUtils.java:178)
+	at net.sourceforge.plantuml.code.CompressionBrotli.decompress(CompressionBrotli.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:55)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:64)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:205)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:136)
+	at randoop.operation.MethodCall.execute(MethodCall.java:186)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:406)
+	at randoop.sequence.Statement.execute(Statement.java:164)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:419)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:311)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:240)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:236)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:299)
+	at randoop.main.GenTests.handle(GenTests.java:570)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: net.sourceforge.plantuml.brotli.BrotliRuntimeException: Exuberant nibble
+	at net.sourceforge.plantuml.brotli.Decode.decodeMetaBlockLength(Decode.java:206)
+	at net.sourceforge.plantuml.brotli.Decode.readNextMetablockHeader(Decode.java:544)
+	at net.sourceforge.plantuml.brotli.Decode.decompress(Decode.java:709)
+	at net.sourceforge.plantuml.brotli.BrotliInputStream.read(BrotliInputStream.java:146)
+	... 24 more
+
+Progress update: steps=2709, test inputs generated=1573, failing inputs=10      (2026-11-08T01:56:39.453130001Z     129M used)
+Normal method executions: 827275
+Exceptional method executions: 517
+
+Average method execution time (normal termination):      0,000351
+Average method execution time (exceptional termination): 0,217
+Approximate memory usage 129M
+Explorer = ForwardGenerator(steps: 2709, null steps: 1136, num_sequences_generated: 1573;
+    allSequences: 1573, regresson seqs: 1490, error seqs: 10=10=10, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 73;
+    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 95)
+
+Error-revealing test output:
+Error-revealing test count: 10
+Writing error-revealing JUnit tests...
+Created file /home/augusto/plantuml/src/test/java/net/sourceforge/plantuml/randoop/ErrorTest0.java
+Created file /home/augusto/plantuml/src/test/java/net/sourceforge/plantuml/randoop/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 927 regression sequences.
+
+Regression test output:
+Regression test count: 927
+Writing regression JUnit tests...
+JUnit version 4.13.2
+...................................................................................................................................E............................................................................................................................E.....................................................................................................................................................................................................................................................
+Time: 0,264
+There were 2 failures:
+1) test131(net.sourceforge.plantuml.randoop.RegressionTest0)
+org.junit.ComparisonFailure: 'fast!' != 'will!' expected:<[fast]!> but was:<[will]!>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at net.sourceforge.plantuml.randoop.RegressionTest0.test131(RegressionTest0.java:1869)
+2) test255(net.sourceforge.plantuml.randoop.RegressionTest0)
+org.junit.ComparisonFailure: '>孮㌞䩍潴焣7瓷[˔䦱㐡N⡕㺎A谄猠襪<餒货4)5䛸㴟\\矷龿䦱帚Ab贲<z' != '孮㌞䩍潴焣瓷˔䦱㐡⡕㺎谄猠襪餒货䛸㴟\\矷龿䦱帚贲<z' expected:<[>孮㌞䩍潴焣7瓷[˔䦱㐡N⡕㺎A谄猠襪<餒货4)5䛸㴟\\矷龿䦱帚Ab]贲<z> but was:<[孮㌞䩍潴焣瓷˔䦱㐡⡕㺎谄猠襪餒货䛸㴟\\矷龿䦱帚]贲<z>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at net.sourceforge.plantuml.randoop.RegressionTest0.test255(RegressionTest0.java:5191)
+
+FAILURES!!!
+Tests run: 500,  Failures: 2
+Created file /home/augusto/plantuml/src/test/java/net/sourceforge/plantuml/randoop/RegressionTest0.java
+JUnit version 4.13.2
+.....................................E.....................................................................................................................................................................E............................................................................................................................E.....................................................................................................
+Time: 0,254
+There were 3 failures:
+1) test537(net.sourceforge.plantuml.randoop.RegressionTest1)
+java.lang.AssertionError
+	at net.sourceforge.plantuml.real.RealMiddle2.<init>(RealMiddle2.java:48)
+	at net.sourceforge.plantuml.real.RealUtils.middle(RealUtils.java:62)
+	at net.sourceforge.plantuml.randoop.RegressionTest1.test537(RegressionTest1.java:1142)
+2) test702(net.sourceforge.plantuml.randoop.RegressionTest1)
+java.lang.AssertionError
+	at net.sourceforge.plantuml.code.AsciiEncoderBase64.encode6bit(AsciiEncoderBase64.java:106)
+	at net.sourceforge.plantuml.randoop.RegressionTest1.test702(RegressionTest1.java:5898)
+3) test826(net.sourceforge.plantuml.randoop.RegressionTest1)
+org.junit.ComparisonFailure: '5a2u44ye5KmN5r20GueEo+eTtxDLlOSmseOQoeKhleO6juiwhOeMoOilqumkkui0p+SbuOO0n1waXOeft+m+v+SmseW4mui0sjx6' != 'PuWtruOMnuSpjea9tBrnhKM355O3EFvLlOSmseOQoU7ioZXjuo5B6LCE54yg6KWqPOmkkui0pzQpNeSbuOO0n1waXOeft+m+v+SmseW4mkFi6LSyPHo=' expected:<[5a2u44ye5KmN5r20GueEo+eTtxDLlOSmseOQoeKhleO6juiwhOeMoOilqumkkui0p+SbuOO0n1waXOeft+m+v+SmseW4mui0sjx6]> but was:<[PuWtruOMnuSpjea9tBrnhKM355O3EFvLlOSmseOQoU7ioZXjuo5B6LCE54yg6KWqPOmkkui0pzQpNeSbuOO0n1waXOeft+m+v+SmseW4mkFi6LSyPHo=]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at net.sourceforge.plantuml.randoop.RegressionTest1.test826(RegressionTest1.java:9943)
+
+FAILURES!!!
+Tests run: 427,  Failures: 3
+JUnit version 4.13.2
+.....................................E.....................................................................................................................................................................E.................................................................................................................................................................................................................................
+Time: 0,253
+There were 2 failures:
+1) test537(net.sourceforge.plantuml.randoop.RegressionTest1)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at org.junit.Assert.assertNotNull(Assert.java:723)
+	at net.sourceforge.plantuml.randoop.RegressionTest1.test537(RegressionTest1.java:1150)
+2) test702(net.sourceforge.plantuml.randoop.RegressionTest1)
+java.lang.AssertionError: ' ' != '@'
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at net.sourceforge.plantuml.randoop.RegressionTest1.test702(RegressionTest1.java:5899)
+
+FAILURES!!!
+Tests run: 427,  Failures: 2
+Created file /home/augusto/plantuml/src/test/java/net/sourceforge/plantuml/randoop/RegressionTest1.java
+Created file /home/augusto/plantuml/src/test/java/net/sourceforge/plantuml/randoop/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  net.sourceforge.plantuml.utils.Obfuscate.obfuscate(java.lang.String)
+  Possibly flaky:  net.sourceforge.plantuml.code.Upf9Decoder.decodeString(byte[],int)
+  Possibly flaky:  net.sourceforge.plantuml.utils.Obfuscate.addException(java.lang.String)
+  Possibly flaky:  net.sourceforge.plantuml.utils.Base64Coder.encodeString(java.lang.String)
+  Possibly flaky:  net.sourceforge.plantuml.real.Real.printCreationStackTrace()
+  Possibly flaky:  net.sourceforge.plantuml.real.Real.getCurrentValue()
+  Possibly flaky:  net.sourceforge.plantuml.code.AsciiEncoderBase64.encode6bit(byte)
+  Possibly flaky:  net.sourceforge.plantuml.real.RealUtils.middle(net.sourceforge.plantuml.real.Real,net.sourceforge.plantuml.real.Real)
+  Possibly flaky:  net.sourceforge.plantuml.real.Real.addFixed(double)
+  Possibly flaky:  net.sourceforge.plantuml.real.RealUtils.max(java.util.Collection<net.sourceforge.plantuml.real.Real>)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+Done looking for flaky methods.
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 15).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .
